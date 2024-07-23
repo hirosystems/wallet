@@ -2,7 +2,7 @@ import { ChainID } from '@stacks/transactions';
 
 import type { NetworkModes } from '@leather.io/models';
 
-export const stxDerivationWithAccount = `m/44'/5757'/0'/0/{account}`;
+export const stxDerivationWithAccount = `m/44'/5757'/{account}'/0/0`;
 const stxIdentityDerivationWithAccount = `m/888'/0'/{account}'`;
 
 function getAccountIndexFromDerivationPathFactory(derivationPath: string) {
