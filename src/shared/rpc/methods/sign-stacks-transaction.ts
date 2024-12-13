@@ -1,6 +1,7 @@
-import { DefineRpcMethod, RpcRequest, RpcResponse } from '@btckit/types';
 import { StacksNetworks } from '@stacks/network';
 import { z } from 'zod';
+
+import { DefineRpcMethod, RpcRequest, RpcResponse } from '@leather.io/rpc';
 
 import { formatValidationErrors, getRpcParamErrors, validateRpcParams } from './validation.utils';
 

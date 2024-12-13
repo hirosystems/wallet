@@ -1,4 +1,4 @@
-import { GetAddressesRequest, RpcErrorCode } from '@btckit/types';
+import { GetAddressesRequest, RpcErrorCode } from '@leather.io/rpc';
 
 import { RouteUrls } from '@shared/route-urls';
 import { makeRpcErrorResponse } from '@shared/rpc/rpc-methods';

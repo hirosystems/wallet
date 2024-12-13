@@ -1,7 +1,7 @@
-import { BtcAddress } from '@btckit/types';
 import { bytesToHex } from '@stacks/common';
 
 import { ecdsaPublicKeyToSchnorr } from '@leather.io/bitcoin';
+import { BtcAddress } from '@leather.io/rpc';
 
 import { logger } from '@shared/logger';
 import { makeRpcSuccessResponse } from '@shared/rpc/rpc-methods';

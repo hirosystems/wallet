@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 
-import { RpcErrorCode } from '@btckit/types';
 import { hexToBytes } from '@noble/hashes/utils';
 import { bytesToHex } from '@stacks/common';
 
@@ -10,6 +9,7 @@ import {
   useCalculateBitcoinFiatValue,
   useCryptoCurrencyMarketDataMeanAverage,
 } from '@leather.io/query';
+import { RpcErrorCode } from '@leather.io/rpc';
 import {
   formatMoney,
   formatMoneyPadded,

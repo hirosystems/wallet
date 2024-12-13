@@ -1,6 +1,5 @@
-import { BtcKitMethodMap, ExtractErrorResponse, ExtractSuccessResponse } from '@btckit/types';
-
 import type { ValueOf } from '@leather.io/models';
+import { ExtractErrorResponse, ExtractSuccessResponse, LeatherRpcMethodMap } from '@leather.io/rpc';
 
 import { SignStacksTransaction } from '@shared/rpc/methods/sign-stacks-transaction';
 
@@ -9,8 +8,7 @@ import { SignPsbt } from './methods/sign-psbt';
 import { SignStacksMessage } from './methods/sign-stacks-message';
 import { SupportedMethods } from './methods/supported-methods';
 
-// Supports BtcKit methods, as well as custom Leather methods
-export type WalletMethodMap = BtcKitMethodMap &
+export type WalletMethodMap = LeatherRpcMethodMap &
   Open &
   SupportedMethods &
   SignPsbt &

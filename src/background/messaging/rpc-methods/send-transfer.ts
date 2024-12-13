@@ -1,5 +1,4 @@
-import { RpcErrorCode, type RpcRequest, type SendTransferRequestParams } from '@btckit/types';
-
+import { RpcErrorCode, type RpcRequest, type SendTransferRequestParams } from '@leather.io/rpc';
 import { isUndefined } from '@leather.io/utils';
 
 import { RouteUrls } from '@shared/route-urls';

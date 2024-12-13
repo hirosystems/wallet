@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import type { PaymentTypes } from '@leather.io/rpc';
+import { PaymentTypes } from '@leather.io/rpc';
 
 import { defaultNetworkIdSchema } from '../rpc-schemas';
 import {

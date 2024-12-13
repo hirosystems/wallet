@@ -1,4 +1,3 @@
-import { RpcErrorCode } from '@btckit/types';
 import { bytesToHex } from '@stacks/common';
 import { TransactionTypes } from '@stacks/connect';
 import {
@@ -17,6 +16,7 @@ import {
 } from '@stacks/transactions';
 import { createUnsecuredToken } from 'jsontokens';
 
+import { RpcErrorCode } from '@leather.io/rpc';
 import { isDefined, isUndefined } from '@leather.io/utils';
 
 import { RouteUrls } from '@shared/route-urls';

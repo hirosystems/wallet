@@ -1,4 +1,4 @@
-import { RpcErrorCode } from '@btckit/types';
+import { RpcErrorCode } from '@leather.io/rpc';
 
 import { WalletRequests, makeRpcErrorResponse } from '@shared/rpc/rpc-methods';
 

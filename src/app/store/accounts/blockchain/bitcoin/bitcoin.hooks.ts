@@ -1,4 +1,3 @@
-import { PaymentTypes } from '@btckit/types';
 import { bytesToHex } from '@noble/hashes/utils';
 import * as btc from '@scure/btc-signer';
 import { Psbt } from 'bitcoinjs-lib';
@@ -13,6 +12,7 @@ import {
 } from '@leather.io/bitcoin';
 import { extractAddressIndexFromPath } from '@leather.io/crypto';
 import { bitcoinNetworkToNetworkMode } from '@leather.io/models';
+import { PaymentTypes } from '@leather.io/rpc';
 import { isNumber, isUndefined } from '@leather.io/utils';
 
 import {

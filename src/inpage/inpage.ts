@@ -1,5 +1,6 @@
-import { RpcRequest } from '@btckit/types';
 import type { StacksProvider } from '@stacks/connect';
+
+import { RpcRequest } from '@leather.io/rpc';
 
 import { BRANCH, COMMIT_SHA } from '@shared/environment';
 import {
@@ -337,6 +338,6 @@ try {
 }
 
 // Legacy product provider objects
-if (typeof window.btc === 'undefined') {
+if (typeof (window as any).btc === 'undefined') {
   (window as any).btc = warnAboutDeprecatedProvider(provider);
 }

@@ -1,7 +1,11 @@
 import type { SendTransferRequestParams } from '@btckit/types';
 import { z } from 'zod';
 
-import { type BitcoinNetworkModes, type DefaultNetworkConfigurations } from '@leather.io/models';
+import {
+  type AllowAdditionalProperties,
+  type BitcoinNetworkModes,
+  type DefaultNetworkConfigurations,
+} from '@leather.io/models';
 import { uniqueArray } from '@leather.io/utils';
 
 import { FormErrorMessages } from '@shared/error-messages';
@@ -94,7 +98,7 @@ interface TransferRecipientParam {
   amount: string;
 }
 
-export interface RpcSendTransferParams {
+export interface RpcSendTransferParams extends AllowAdditionalProperties {
   account?: number;
   recipients: TransferRecipientParam[];
   network: string;

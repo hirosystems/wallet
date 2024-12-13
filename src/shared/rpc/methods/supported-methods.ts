@@ -1,4 +1,4 @@
-import { DefineRpcMethod, RpcRequest, RpcSuccessResponse } from '@btckit/types';
+import { DefineRpcMethod, RpcRequest, RpcSuccessResponse } from '@leather.io/rpc';
 
 export type SupportedMethodsRequest = RpcRequest<'supportedMethods'>;
 

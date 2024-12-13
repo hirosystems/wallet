@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import '@btckit/types';
 import { demoTokenContract } from '@common/contracts';
 import { useSTXAddress } from '@common/use-stx-address';
 import {
@@ -448,8 +447,7 @@ export const Debugger = () => {
             mt={3}
             onClick={() => {
               console.log('requesting');
-              window.btc
-                ?.request('getAddresses')
+              window.LeatherProvider?.request('getAddresses')
                 .then(resp => {
                   console.log({ sucesss: resp });
                 })

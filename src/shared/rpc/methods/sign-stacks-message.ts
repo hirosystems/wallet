@@ -1,17 +1,16 @@
-import { DefineRpcMethod, RpcRequest, RpcResponse } from '@btckit/types';
 import { StacksNetworks } from '@stacks/network';
 import { z } from 'zod';
 
-import { formatValidationErrors, getRpcParamErrors, validateRpcParams } from './validation.utils';
+import { DefineRpcMethod, RpcRequest, RpcResponse, stxMessageSigningTypes } from '@leather.io/rpc';
 
-const SignedMessageTypeArray = ['utf8', 'structured'] as const;
+import { formatValidationErrors, getRpcParamErrors, validateRpcParams } from './validation.utils';
 
 // TODO: refactor to use .discriminatedUnion
 const rpcSignStacksMessageParamsSchema = z.object({
   network: z.enum(StacksNetworks).optional(),
   message: z.string(),
   domain: z.string().optional(),
-  messageType: z.enum(SignedMessageTypeArray),
+  messageType: z.enum(stxMessageSigningTypes),
 });
 
 export function validateRpcSignStacksMessageParams(obj: unknown) {

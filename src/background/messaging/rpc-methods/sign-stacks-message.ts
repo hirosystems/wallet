@@ -1,5 +1,4 @@
-import { RpcErrorCode } from '@btckit/types';
-
+import { RpcErrorCode } from '@leather.io/rpc';
 import { isDefined, isUndefined } from '@leather.io/utils';
 
 import { RouteUrls } from '@shared/route-urls';
