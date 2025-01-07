@@ -1,6 +1,6 @@
 import { FundPageSelectors } from '@tests/selectors/fund.selectors';
 
-import { StarIcon, Tag, ZapIcon } from '@leather.io/ui';
+import { Badge, StarIcon, ZapIcon } from '@leather.io/ui';
 
 import { AvailableRegions } from '@app/query/common/remote-config/remote-config.query';
 
@@ -38,10 +38,10 @@ export function FiatProviderItem(props: FiatProviderProps) {
   const Attributes = (
     <>
       {hasFastCheckoutProcess && (
-        <Tag icon={<ZapIcon variant="small" />} label="Fast checkout" variant="success" />
+        <Badge icon={<ZapIcon variant="small" />} label="Fast checkout" variant="success" />
       )}
       {!hasTradingFees && (
-        <Tag icon={<StarIcon variant="small" />} label="0 % Fees" variant="warning" />
+        <Badge icon={<StarIcon variant="small" />} label="0 % Fees" variant="warning" />
       )}
     </>
   );
