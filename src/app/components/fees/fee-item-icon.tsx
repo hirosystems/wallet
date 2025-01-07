@@ -12,10 +12,10 @@ import type { FeeType } from '@app/common/fees/use-fees';
 import { IconWrapper } from '../icon-wrapper';
 
 const feeTypeToIconMap: Record<FeeType, ReactNode> = {
-  slow: <AnimalSnailIcon variant="small" />,
-  standard: <AnimalRabbitIcon variant="small" />,
-  fast: <AnimalEagleIcon variant="small" />,
-  custom: <AnimalChameleonIcon variant="small" />,
+  slow: <AnimalSnailIcon />,
+  standard: <AnimalRabbitIcon />,
+  fast: <AnimalEagleIcon />,
+  custom: <AnimalChameleonIcon />,
 };
 
 export function FeeItemIcon({ feeType }: { feeType: FeeType }) {
