@@ -145,10 +145,7 @@ export function useLedgerNavigate() {
       },
 
       cancelLedgerAction() {
-        // Use baseUrl to determine where to go on close
-        const baseUrl = `/${location.pathname.split('/')[1]}`;
-
-        return navigate(baseUrl, {
+        return navigate('..', {
           relative: 'path',
           replace: true,
           state: { ...location.state, wentBack: true },
