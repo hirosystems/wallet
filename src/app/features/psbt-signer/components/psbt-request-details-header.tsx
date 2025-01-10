@@ -3,7 +3,7 @@ import { HStack, styled } from 'leather-styles/jsx';
 import { LockIcon, UnlockIcon } from '@leather.io/ui';
 
 import { usePsbtSignerContext } from '@app/features/psbt-signer/psbt-signer.context';
-import { TagWithTooltip } from '@app/ui/components/tag/tag-with-tooltip';
+import { BadgeWithTooltip } from '@app/ui/components/badge/badge-with-tooltip';
 
 const immutableLabel =
   'Any modification to the transaction, including the fee amount or other inputs/outputs, will invalidate the signature.';
@@ -16,12 +16,12 @@ export function PsbtRequestDetailsHeader() {
   return (
     <HStack alignItems="center" gap="space.02">
       <styled.h2 textStyle="heading.05">Transaction</styled.h2>
-      <TagWithTooltip
+      <BadgeWithTooltip
         hoverLabel={isPsbtMutable ? uncertainLabel : immutableLabel}
         icon={isPsbtMutable ? <UnlockIcon variant="small" /> : <LockIcon variant="small" />}
         label={isPsbtMutable ? 'Uncertain' : 'Certain'}
-        transparent
         variant={isPsbtMutable ? 'warning' : 'default'}
+        outlined
       />
     </HStack>
   );
