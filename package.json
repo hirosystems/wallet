@@ -149,7 +149,7 @@
     "@leather.io/bitcoin": "0.17.0",
     "@leather.io/constants": "0.13.5",
     "@leather.io/crypto": "1.6.14",
-    "@leather.io/models": "0.24.0",
+    "@leather.io/models": "0.24.3",
     "@leather.io/query": "2.26.10",
     "@leather.io/stacks": "1.4.0",
     "@leather.io/tokens": "0.12.1",
@@ -360,6 +360,7 @@
     "ts-node": "10.9.2",
     "ts-unused-exports": "10.0.1",
     "tsconfig-paths-webpack-plugin": "4.1.0",
+    "type-fest": "4.30.2",
     "typescript": "5.4.5",
     "vitest": "2.0.5",
     "vm-browserify": "1.1.2",
@@ -370,8 +371,7 @@
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "4.15.1",
     "webpack-hot-middleware": "2.26.1",
-    "webpack-shell-plugin": "0.5.0",
-    "type-fest": "4.30.2"
+    "webpack-shell-plugin": "0.5.0"
   },
   "resolutions": {
     "cross-spawn": "7.0.5",
